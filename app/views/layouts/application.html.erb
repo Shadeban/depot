@@ -24,11 +24,15 @@
       <li><a href="http://www..../news">News</a></li>
       <li><a href="http://www..../contact">Contact</a></li>
     </ul>
+   
   </div>
   <div id="main">
     <!-- END_HIGHLIGHT -->
     <%= yield %><!-- <label id="code.depot.e.include"/> -->
     <!-- START_HIGHLIGHT -->
+  </div>
+  <div id="time">
+    	<%= Time.now.strftime("Served %c") %>
   </div>
 </div>
 <!-- END_HIGHLIGHT -->
